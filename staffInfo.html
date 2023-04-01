@@ -40,20 +40,21 @@
     <!-- End Header -->
 
 <div class="dialog-interface edit-staff-interface">
-    <div class="edit-staff-dialog">
-        <h2>Thông tin nhân viên</h2>
-        <i id="close-dialog" class="fa-solid fa-xmark"></i>
+    <div class="edit-staff-dialog edit-staff-dialog-ex">
+        <div style="display: flex; justify-content: space-between;">
+            <h2>Sửa thông tin nhân viên</h2>
+            <i id="close-dialog-edit" class="fa-solid fa-xmark close-btn"></i>
+        </div>
         <span class="line"></span>
         <div class="staff-info">
             <div class="avatar-staff">
                 <img src="public/img/avatar.png" alt="">
                 <input type="file">
             </div>
-
             <div class="detail-staff-info">
-                <p>ID: <input type="text"></p>
+                <p>ID: <input id="id-text" type="text"></p>
                 <p>Mã CCCD:  <input type="text"></p>
-                <p>Tên: <input type="text"></p>
+                <p>Tên: <input id="name-text" type="text"></p>
                 <p>Giới tính:
                     <!-- Putting the name attribute (the same name) to tag input makes only-one-choosen functionality  -->
                     <input type="radio" name="gender" value="male" checked>
@@ -65,7 +66,7 @@
                 </p>
                 <p>Ngày sinh: <input type="text"></p>
                 <p>Số điện thoại: <input type="text"></p>
-                <p>Email: <input type="text"></p>
+                <p>Email: <input id="email-text" type="text"></p>
                 <p>Địa chỉ:<input type="text"></p>
                 <p>Vị trí:
                     <input type="radio" name="position" value="back_officer" checked>
@@ -78,10 +79,38 @@
                 </p>
             </div>
         </div>
-        <button id="save-edit-staff">Luu</button>
+        <button id="save-edit-staff">Save</button>
     </div>
 </div>
 
+
+<div class="dialog-interface info-staff-interface">
+    <div class="info-staff-dialog edit-staff-dialog-ex">
+        <div style="display: flex; justify-content: space-between;">
+            <h2>Thông tin nhân viên</h2>
+            <i id="close-dialog-view" class="fa-solid fa-xmark close-btn"></i>
+        </div>
+        <span class="line"></span>
+        <div class="staff-info">
+            <div class="avatar-staff">
+                <img src="public/img/avatar.png" alt="">
+                <input type="file">
+            </div>
+            
+            <div class="detail-staff-info">
+                <div> <span>ID: </span> <span id="id-info">1234</span></div>
+                <div> <span>Mã CCCD: </span> <span id="cccd-info">123456789</span></div>
+                <div> <span>Tên: </span> <span id="name-info">Em be</span></div>
+                <div> <span>Giới tính: </span> <span id="gender-info"></span> </div>
+                <div> <span>Ngày sinh: </span> <span>20/11/2002</span></div>
+                <div> <span>Số điện thoại: </span> <span>0123456789</span></div>
+                <div> <span>Email: </span> <span id="email-info">dinkmsd@gmail.com</span></div>
+                <div> <span>Địa chỉ: </span> <span>TP. HCM</span></div>
+                <div> <span>Vị trí: </span> <span id="position-info"></span></div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <!-- Delete Staff UI -->
 
@@ -137,7 +166,6 @@
                     <th>Back Officer</th>
                     <th>
                         <i id="edit-btn" class="fa-solid fa-pen"></i>
-                        <!-- <i class="fa-solid fa-xmark"></i> -->
                         <i id="profile-btn" class="fa-solid fa-user"></i>
                         <i id="delete-btn" class="fa-solid fa-trash"></i>
                     </th>
@@ -151,7 +179,6 @@
                     <th>Back Officer</th>
                     <th>
                         <i id="edit-btn" class="fa-solid fa-pen"></i>
-                        <!-- <i class="fa-solid fa-xmark"></i> -->
                         <i id="profile-btn" class="fa-solid fa-user"></i>
                         <i id="delete-btn" class="fa-solid fa-trash"></i>
                     </th>
@@ -164,7 +191,6 @@
                     <th>Tài xế</th>
                     <th>
                         <i id="edit-btn" class="fa-solid fa-pen"></i>
-                        <!-- <i class="fa-solid fa-xmark"></i> -->
                         <i id="profile-btn" class="fa-solid fa-user"></i>
                         <i id="delete-btn" class="fa-solid fa-trash"></i>
                     </th>
@@ -173,7 +199,7 @@
                     <th>0001</th>
                     <th>Nguyễn Văn A</th>
                     <th>Nam</th>
-                    <th>3/7/2023</th>
+                    <th>conngancon@gmail.com</th>
                     <th>Back Officer</th>
                     <th>
                         <i id="edit-btn" class="fa-solid fa-pen"></i>

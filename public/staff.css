@@ -1,3 +1,8 @@
+.close-btn {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .dialog-interface{
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -12,7 +17,7 @@
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
     transition: .5s;
 }
-.edit-staff-dialog {
+.edit-staff-dialog-ex {
     position: absolute;
     top:45%;
     left:50%;
@@ -23,18 +28,18 @@
     border-radius: 10px;
     padding-right: 40px;
 }
-.edit-staff-dialog h2 {
+.edit-staff-dialog-ex h2 {
     margin-left: 30px;
     margin-top: 15px;
     margin-bottom: 10px;
 }
-.edit-staff-dialog #close-dialog{
+.edit-staff-dialog-ex #close-dialog{
     position: absolute;
     right: 5%;
     top: 5%;
     font-size: 25px;
 }
-.edit-staff-dialog .line {
+.edit-staff-dialog-ex .line {
     position: absolute;
     top: 12%;
     left: 5%;
@@ -45,26 +50,26 @@
     background-color: #000000;
     display: block;
 }
-.edit-staff-dialog .staff-info {
+.edit-staff-dialog-ex .staff-info {
     display: flex;
     align-items: center;
     justify-content: space-around;
 }  
-.edit-staff-dialog .staff-info .avatar-staff {
+.edit-staff-dialog-ex .staff-info .avatar-staff {
     width: 40%;
     margin-left: 30px;
 }
-.edit-staff-dialog .staff-info .avatar-staff img {
+.edit-staff-dialog-ex .staff-info .avatar-staff img {
     width: 180px;
 }
-.edit-staff-dialog .staff-info .detail-staff-info{
+.edit-staff-dialog-ex .staff-info .detail-staff-info{
     width: 60%;
 }
-.edit-staff-dialog .staff-info .detail-staff-info p {
+.edit-staff-dialog-ex .staff-info .detail-staff-info p {
     position: relative;
     margin-bottom: 5px;
 }
-.edit-staff-dialog .staff-info .detail-staff-info p input[type=text] {
+.edit-staff-dialog-ex .staff-info .detail-staff-info p input[type=text] {
     height: 20px;
     padding: 0 10px;
     /* border: none; */
@@ -75,20 +80,20 @@
     border-radius: 10px;
     background-color: rgb(216, 216, 216);
 }
-.edit-staff-dialog .staff-info .detail-staff-info p label{
+.edit-staff-dialog-ex .staff-info .detail-staff-info p label{
     margin-right: 10px;
 }
 
-.edit-staff-dialog .staff-info .detail-staff-info p span {
+.edit-staff-dialog-ex .staff-info .detail-staff-info p span {
     font-weight: bold;
     position: absolute;
     top : 0;
     left:200px;
 }
-.edit-staff-dialog .staff-info .detail-staff-info p input[value=janitor]{
+.edit-staff-dialog-ex .staff-info .detail-staff-info p input[value=janitor]{
     margin-left: 50px;
 }
-.edit-staff-dialog button {
+.edit-staff-dialog-ex button {
     position: absolute;
     top: 88%;
     left: 78%;
